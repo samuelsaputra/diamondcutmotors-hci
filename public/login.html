@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DiamondCut Motors - Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/login.css" />
+  </head>
+  <body>
+    <header>
+      <div id="navbar">
+        <div class="navbar-top">
+          <div class="logo-nav">
+            <img
+              class="logo"
+              src="../assets/images/DiamondCutMotors_logo.png"
+              alt="logo"
+            />
+          </div>
+          <div class="hamburger-div">
+            <button id="hamburger-menu" class="hamburger">&#9776;</button>
+          </div>
+        </div>
+        <nav id="nav-menu">
+          <ul class="nav_links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="cars.html">Cars</a></li>
+            <li><a href="showroom.html">Showroom</a></li>
+            <li><a href="about.html">About&nbspUs</a></li>
+            <li>
+              <a href="login.html">
+                <button class="btn" id="login_btn">Login</button>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <img
+        src="../assets/images/login-background-img.png"
+        alt="car background"
+      />
+      <div class="login-form">
+        <h1>Login to your account</h1>
+        <p>Welcome back! Please sign in to your account</p>
+        <form>
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" />
+            <span class="error-message" id="username-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email address:</label>
+            <input type="text" id="email" />
+            <span class="error-message" id="email-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="phonenumber">Phone number</label>
+            <input type="text" id="phonenum" />
+            <span class="error-message" id="phonenum-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" />
+            <span class="error-message" id="password-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="confpassword">Confirm Password:</label>
+            <input type="password" id="confpassword" />
+            <span class="error-message" id="confpassword-error"></span>
+          </div>
+          <div class="form-agreement">
+            <input type="checkbox" name="agreement" id="agreement" />
+            <label for="agreement"
+              >I agree to the
+              <span class="terms-and-services">terms and services</span></label
+            >
+
+            <span class="error-message" id="agreement-error"></span>
+          </div>
+          <br />
+          <div class="sign-in-button">
+            <button id="signinbtn" type="button" onclick="validateData()">
+              Sign in
+            </button>
+          </div>
+          <span class="success-message" id="success-message"></span>
+        </form>
+      </div>
+    </div>
+    <script src="../assets/js/login.js"></script>
+    <script src="../assets/js/hamburger-menu.js"></script>
+    <script src="../assets/js/sticky.js"></script>
+  </body>
+</html>
